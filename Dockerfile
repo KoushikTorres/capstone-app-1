@@ -8,4 +8,4 @@ RUN apt update && apt upgrade -y
 RUN apt install apache2 -y
 EXPOSE 80
 CMD ["/usr/sbin/apache2ctl","-D","FOREGROUND"]
-ADD capstone-app-1/  /var/www/html
+ADD images index.html  /var/www/html
